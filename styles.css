@@ -9,7 +9,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
     letter-spacing: 2px;
-    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.5);
+    box-shadow: 0 5px 15px rgba(159, 3, 211, 0.5);
 }
 
 /* Estilo del modal grande */
@@ -54,13 +54,13 @@
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
-    box-shadow: 0 8px 15px rgba(255, 69, 0, 0.4);
+    box-shadow: 0 8px 15px rgba(178, 1, 210, 0.4);
 }
 
 #agregar:hover {
     background-color: #a51bea;; /* Naranja Vibrante */
     transform: translateY(-8px) scale(1.1);
-    box-shadow: 0 10px 20px rgba(255, 99, 71, 0.5);
+    box-shadow: 0 10px 20px rgba(158, 7, 181, 0.5);
 }
 
 #agregar i {
