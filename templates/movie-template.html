@@ -1,0 +1,12 @@
+<div class="col-md-4">
+    <div class="card movie-card">
+        <img class="card-img-top" src="{{Poster}}" alt="{{Title}}">
+        <div class="card-body">
+            <h5 class="card-title">{{Title}} ({{Year}})</h5>
+            <p class="card-text">{{description}}</p>
+            <p class="card-text"><small class="text-muted">{{Type}}</small></p>
+            <button class="btn btn-primary" onclick="editMovie('{{imdbID}}')">Editar</button>
+            <button class="btn btn-danger" onclick="deleteMovie('{{imdbID}}')">Eliminar</button>
+        </div>
+    </div>
+</div>
