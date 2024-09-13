@@ -14,9 +14,10 @@
 
 /* Estilo del modal grande */
 .modal-lg {
+    font-family: 'Press Start 2P', cursive;
     max-width: 850px;
     border-radius: 12px;
-    border: 2px solid #20b2aa; /* Verde Agua */
+    border: 2px solid #40f100; /* Verde Agua */
 }
 
 /* Estilo del poster de imagen */
@@ -30,7 +31,7 @@
 
 /* Navbar */
 .navbar {
-    background-color: #20b2aa; /* Verde Agua */
+    background-color: #9220b2; /* Verde Agua */
     border-bottom: 3px solid #04ff00; /* Rojo Pastel */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     padding: 1rem 2rem;
@@ -43,6 +44,8 @@
 
 /* Botón de agregar */
 #agregar {
+    font-family: 'Press Start 2P', cursive;
+   
     background-color: #a906b8; /* Naranja Rojo */
     border: none;
     color: rgb(34, 255, 0);
@@ -53,11 +56,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     box-shadow: 0 8px 15px rgba(178, 1, 210, 0.4);
 }
 
 #agregar:hover {
+    font-family: 'Press Start 2P', cursive;
     background-color: #a51bea;; /* Naranja Vibrante */
     transform: translateY(-8px) scale(1.1);
     box-shadow: 0 10px 20px rgba(158, 7, 181, 0.5);
@@ -70,15 +74,17 @@
 
 /* Formulario de búsqueda */
 form .form-control {
+    font-family: 'Press Start 2P', cursive;
     border: 3px solid #7d00f9; /* Verde Agua */
     border-radius: 50px;
     padding-left: 1.8rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     background-color: #f0f8ff; /* Azul Cielo Claro */
 }
 
 form .form-control:focus {
+    font-family: 'Press Start 2P', cursive;
     border-color: #d000ff; /* Verde Claro */
     box-shadow: 0 0 10px rgba(60, 179, 113, 0.6);
 }
@@ -91,11 +97,14 @@ form .btn {
 }
 
 form .btn-outline-success {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
     border-color: #5a0681; /* Verde Claro */
     color: #5a0681;
 }
 
 form .btn-outline-success:hover {
+    font-family: 'Press Start 2P', cursive;
     background-color: #480271;
     color: white;
     transform: translateY(-5px) scale(1.1);
@@ -122,6 +131,7 @@ form .btn-outline-success:hover {
 
 /* Colores personalizados */
 .custom-dark-blue {
+    font-family: 'Press Start 2P', cursive;
     background-color: #a51bea; /* Naranja vibrante */
 }
 
@@ -170,5 +180,92 @@ h1 {
   body {
     background-color: #391474; /* Cambia este color al que prefieras */
 }
+/* Estilo para el botón Modificar */
+#modificarBtn {
+    background-color: #3498db; /* Cambia a tu color deseado */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#modificarBtn:hover {
+    background-color: #2980b9; /* Cambia a tu color deseado para el hover */
+}
+
+/* Estilo para el botón Eliminar Película */
+#eliminarBtn {
+    background-color: #e74c3c; /* Cambia a tu color deseado */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#eliminarBtn:hover {
+    background-color: #c0392b; /* Cambia a tu color deseado para el hover */
+}
+/* Estilo para el label del título */
+.form-label {
+    color: #9534db; /* Color deseado para el texto del label */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    margin-bottom: 0.5rem; /* Espacio debajo del label */
+}
+
   
-  
+.text-primary {
+    font-family: 'Press Start 2P', cursive;
+    --bs-text-opacity: 1;
+    color: rgb(112, 0, 169) !important;
+}
+.btn-danger {
+    font-family: 'Press Start 2P', cursive;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e20000;
+    --bs-btn-border-color: #6c000b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ff0019;
+    --bs-btn-hover-border-color: #b02a37;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e20000;
+    --bs-btn-active-border-color: #e20000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #7a000c;
+    --bs-btn-disabled-border-color: #70010c;
+}
+
+.btn-outline-primary {
+    font-family: 'Press Start 2P', cursive;
+    --bs-btn-color: #31fd0d;
+    --bs-btn-border-color: #0dfd31;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #003f0c;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #11fd0d;
+    --bs-btn-active-border-color: #31fd0d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #0d6efd;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #0d6efd;
+    --bs-gradient: none;
+}
+
