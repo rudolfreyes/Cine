@@ -46,14 +46,12 @@ async function fetchMovies() {
     console.error('Error al obtener películas:', error);
   }
 }
-
 // Función de búsqueda de películas
 function buscarPelicula() {
   let query = document.getElementById('searchInput').value;
   apiUrl = `https://movie.azurewebsites.net/api/cartelera?title=${query}&ubication=`;
   fetchMovies();
 }
-
 // Función para actualizar la imagen del póster
 function updateImage() {
   const urlInput = document.getElementById('imagenUrl').value;
@@ -88,7 +86,6 @@ async function accion() {
     alert(`Hubo un error al ${esModificacion ? 'modificar' : 'guardar'} la película.`);
   }
 }
-
 // Función para obtener datos del formulario
 function obtenerDatosFormulario() {
   return {
@@ -102,7 +99,6 @@ function obtenerDatosFormulario() {
     Ubication: document.getElementById('ubicacion').value
   };
 }
-
 // Función para enviar datos a la API
 async function enviarDatos(pelicula, esModificacion) {
   const url = esModificacion 
@@ -120,12 +116,10 @@ async function enviarDatos(pelicula, esModificacion) {
   if (!response.ok) throw new Error(`Error: ${response.status} - ${response.statusText}`);
   return await response.json();
 }
-
 // Función para actualizar la vista dinámicamente
 function actualizarVista(pelicula, esModificacion) {
   const moviesContainer = document.getElementById('movies');
   const movieDiv = document.querySelector(`#movie-${pelicula.imdbID}`);
-
   if (esModificacion && movieDiv) {
     movieDiv.querySelector('.title').textContent = pelicula.Title;
     movieDiv.querySelector('.year').textContent = pelicula.Year;
@@ -150,7 +144,6 @@ function actualizarVista(pelicula, esModificacion) {
 async function visualizar(imdbID) {
   document.getElementById("ABCLabel").textContent = "Modificar película";
   document.getElementById('codigo').disabled = true;
-
   try {
     const response = await fetch(`https://movie.azurewebsites.net/api/cartelera?imdbID=${imdbID}`);
     const movie = await response.json();
@@ -162,7 +155,6 @@ async function visualizar(imdbID) {
     document.getElementById('descripcion').value = movie.description;
     document.getElementById('ubicacion').value = movie.Ubication;
     document.getElementById('activo').checked = movie.Estado === 1;
-
     updateImage();
   } catch (error) {
     console.error('Error al visualizar película:', error);
